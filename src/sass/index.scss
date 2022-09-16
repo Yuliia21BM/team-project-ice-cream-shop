@@ -1,2 +1,20 @@
-@import './common';
-@import './example';
+@import './base/common';
+@import './base/reset';
+@import './utils/vars';
+@import './utils/hidden';
+
+@import './header';
+@import './header-menu';
+@import './buy-now-modal';
+@import './hero';
+@import './products';
+@import './modal-ingridients';
+@import './about';
+@import './about-modal';
+@import './advantages';
+@import './gallery';
+@import './customer-reviews';
+@import './contacts';
+@import './locations-modal';
+@import './franchise-modal';
+@import './footer';
