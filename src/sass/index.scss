@@ -2,7 +2,8 @@
 @import './base/reset';
 @import './utils/vars';
 @import './utils/hidden';
-@import './base/buttons';
+@import './utils/mixins';
+@import './base/base';
 
 @import './header';
 @import './header-menu';
