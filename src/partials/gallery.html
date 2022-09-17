@@ -1,0 +1,34 @@
+<section class="gallery">
+  <h2 class="visually-hidden">Галерея</h2>
+  <ul class="gallery__list">
+    <li class="gallery__item">
+      <picture class="gallery__picture">
+        <source
+          srcset="
+            ./images/gallery/desktop-gallery-1-1x-min.jpg 1x,
+            ./images/gallery/desktop-gallery-1-2x-min.jpg 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/gallery/tablet-gallery-1-1x-min.jpg 1x,
+            ./images/gallery/tablet-gallery-1-2x-min.jpg 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/gallery/mob-gallery-1-1x-min.jpg 1x,
+            ./images/gallery/mob-gallery-1-2x-min.jpg 2x
+          "
+          media="(max-width:767px)"
+        />
+        <img
+          src="./images/gallery/desktop-gallery-1-1x-min.jpg"
+          alt="зображення галереї"
+        />
+      </picture>
+    </li>
+  </ul>
+</section>
