@@ -16,6 +16,7 @@
     height: 34px;
     background-color: var(--accent);
     border-radius: 50%;
+   
 
     &:hover  .social-icon,
     &:focus   .social-icon{
@@ -61,7 +62,17 @@
 
         color: var(--light-color);
         padding-bottom: 9px;
+        display: table-caption;
 
+    }
+
+    .social-list {
+
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+        padding-top: 42px;
+        padding-bottom: 38px;
     }
 
     .phone {
@@ -91,6 +102,7 @@
         text-align: right;
         
         color: var(--light-color);
+        text-decoration: none;
 
     }
 
@@ -135,6 +147,15 @@
 
     }
 
+    .social-list {
+
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+        padding-top: 68px;
+        padding-bottom: 32px;
+    }
+
     .phone {
         padding-top: 32px;
         padding-bottom: 56px;
@@ -162,6 +183,7 @@
         text-align: right;
         
         color: var(--light-color);
+        text-decoration: none;
 
     }
 
@@ -207,6 +229,15 @@
 
     }
 
+    .social-list {
+
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+        padding-top: 12px;
+        padding-bottom: 86px;
+    }
+
 
     .phone {
         padding-top: 40px;
@@ -235,6 +266,7 @@
         text-align: right;
         
         color: var(--light-color);
+        text-decoration: none;
 
     }
 
