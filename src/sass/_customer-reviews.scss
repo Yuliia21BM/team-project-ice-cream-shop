@@ -1,19 +1,15 @@
 .customer-reviews {
+    background-image: url(../images/customer-reviewes/ice-cream-bg-x1.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
 
+    @include retina {
+        background-image: url(../images/customer-reviewes/ice-cream-bg-x2.png);
+    }
 }
 
 .customer-reviews__container {
-    background-image: url(../images/customer-reviewes/ice-cream-bg-x1.png);
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-size: cover;
-    
-        @include retina {
-            background-image: url(../images/customer-reviewes/ice-cream-bg-x2.png);
-        }
-
-
-
     padding-top: 80px;
     padding-bottom: 48px;
     
