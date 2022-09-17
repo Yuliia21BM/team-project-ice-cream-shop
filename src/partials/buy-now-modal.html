@@ -1,4 +1,4 @@
-<div class="modal-buy-now__backdrop container">
+<div class="modal-buy-now__backdrop">
     <div class="modal-buy-now">
         <button type="button" class="modal-buy-now__button-close">
             <svg class="modal-buy-now__button-close-svg"  width="11.11px" height="11.14px">
@@ -15,8 +15,8 @@
                         ./images/buy-now-modal/ice-cream-desk-2x.png"
                     src="./images/buy-now-modal/ice-cream-desk-1x.png" 
                     alt=""
-                    width="131.56px"
-                    height="130.6px"
+                    width="132px"
+                    height="132px"
                 />
                 <p>ice cream</p>
             </li>
@@ -29,7 +29,7 @@
                     src="./images/buy-now-modal/ice-coffe-desk-1x.png" 
                     alt=""
                     width="132px"
-                    height="131.01px"
+                    height="132px"
                 />
                 <p>ice coffee</p>
             </li>
@@ -42,7 +42,7 @@
                     src="./images/buy-now-modal/ice-milkshake-desk-1x.png" 
                     alt=""
                     width="132px"
-                    height="131.01px"
+                    height="132px"
                 />
                 <p>milkshake</p>
             </li>
@@ -54,6 +54,7 @@
                 type="text" 
                 name="user-name" 
                 placeholder="Name"
+                pattern=""
              />
             
              <input 
@@ -61,12 +62,14 @@
                 type="text" 
                 name="user-tel" 
                 placeholder="Phone"
+                pattern=""
              />
            
              <textarea class="modal-buy-now__user-comment"
                 name="user-comment" 
                 id="user-comment"
-                placeholder="Comment">
+                placeholder="Comment"
+                pattern="">
              </textarea>
           
             <button type="submit" class="modal__send-button">Submit</button>
