@@ -1,4 +1,7 @@
 .primary-button {
+    display: flex;
+    align-items: center;
+    text-align: center;
     padding-top: 12px;
     padding-bottom: 12px;
     font-family: inherit;
@@ -30,12 +33,14 @@
 }
 
 .secondary-button {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 5px 6px;
     font-family: inherit;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 1.29;
+    font-size: 8px;
+    line-height: 1.25;
     color: #000000;
     background-color: transparent;
     border: 2px solid var(--accent);
@@ -53,5 +58,11 @@
     &:disabled{
         color: #000000;
         border: 2px solid #ABABAB;
+    }
+    @include desdesktop{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 14px;
+        line-height: 1.29;
     }
 }
