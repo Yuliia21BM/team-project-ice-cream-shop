@@ -16,6 +16,11 @@
     color: var(--light-color);
     padding-top: 60px;
     margin-bottom: 12px;
+    @include desktop {
+        margin-bottom: 12px;
+        font-size: 30px;
+        line-height: 1.23;
+    }
 }
 
 .about-title {
@@ -36,6 +41,8 @@
     }
     @include desktop {
         margin-bottom: 82px;
+        font-size: 36px;
+        line-height: 1.25;
     }
 }
 
@@ -49,8 +56,8 @@
 
 .about-text {
     @include tablet {
-        max-width: 336px;
-        height: 254px;
+        // max-width: 336px;
+        // height: 254px;
     }
     @include desktop {
         max-width: 463px;
@@ -71,14 +78,16 @@
     margin-bottom: 4px;
     @include tablet {
         margin-top: 0;
-        text-align: left;
+        text-align: start;
         padding-left: 0;
+        padding-right: 0;
         margin-bottom: 8px;
     }
     @include desktop {
         font-size: 16px;
         line-height: 1.76;
         padding-right: 0;
+        padding-left: 0;
     }
 }
 
@@ -94,12 +103,14 @@
     @include tablet {
         text-align: left;
         padding-left: 0;
-        padding-right: 32px;
+        padding-right: 0;
         margin-bottom: 8px;
+        line-height: 1.76;
     }
     @include desktop {
         font-size: 14px;
         line-height: 1.94;
+        padding-right: 0;
         padding-right: 0;
     }
 }
@@ -120,11 +131,14 @@
         margin-bottom: 48px;
         display: block;
         text-align: left;
+        padding-right: 0;
+        line-height: 1.94;
     }
     @include desktop {
         font-size: 14px;
         line-height: 1.94;
         padding-right: 0;
+        margin-bottom: 0;
     }
 }
 
