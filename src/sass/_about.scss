@@ -29,6 +29,12 @@
     text-transform: uppercase;
     color: var(--light-color);
     margin-bottom: 32px;
+    @include tablet {
+        margin-bottom: 72px;
+    }
+    @include desktop {
+        margin-bottom: 82px;
+    }
 }
 
 
@@ -37,6 +43,18 @@
 .about-img {
     margin-left: auto;
     margin-right: auto;
+}
+
+.about-text {
+    @include tablet {
+        max-width: 336px;
+        height: 254px;
+    }
+    @include desktop {
+        margin-top: 172px;
+        max-width: 463px;
+        height: 257px;
+    }
 }
 
 .about-text-first {
@@ -59,6 +77,10 @@
         margin-bottom: 8px;
         padding-right: 32px;
     }
+    @include desktop {
+        font-size: 16px;
+        line-height: 1.28;
+    }
 }
 
 .about-text-second {
@@ -78,6 +100,10 @@
         padding-right: 32px;
         margin-bottom: 8px;
     }
+    @include desktop {
+        font-size: 14px;
+        line-height: 1.27;
+    }
 }
 
 .about-text-third {
@@ -89,10 +115,19 @@
     letter-spacing: 0.04em;
     color: var(--light-color);
     text-align: center;
+    @include mobile {
+        display: none;
+    }
     @include tablet {
         margin-bottom: 48px;
+        display: block;
+        text-align: left;
+        padding-right: 32px;
     }
-
+    @include desktop {
+        font-size: 14px;
+        line-height: 1.27;
+    }
 }
 
 .about-btn {
@@ -104,13 +139,18 @@
 }
 
 .about-flex {
+    padding-bottom: 42px;
     @include tablet {
         display: flex;
+        padding-bottom: 48px;
     }
 }
 
 .about-flex-text {
     @include tablet {
        margin-left: 32px; 
+    }
+    @include desktop {
+        margin-left: 100px;
     }
 }
