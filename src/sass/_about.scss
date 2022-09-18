@@ -51,7 +51,6 @@
         height: 254px;
     }
     @include desktop {
-        margin-top: 172px;
         max-width: 463px;
         height: 257px;
     }
@@ -152,5 +151,7 @@
     }
     @include desktop {
         margin-left: 100px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 }
