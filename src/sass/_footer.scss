@@ -14,13 +14,13 @@ footer {
     align-items: center;
     width: 34px;
     height: 34px;
-    background: #F8D24E;
+    background: var(----accent);
     border-radius: 50%;
    
 
     &:hover  .social-icon,
     &:focus   .social-icon{
-    fill: #FCFCFC;
+    fill: (--light-color);
 }
 }
 
@@ -36,7 +36,7 @@ footer {
 }
 
 .text-footer {
-    border: 1px solid #E1E1E1;
+    border-top: 1px solid #E1E1E1;
 }
 
 
@@ -146,6 +146,7 @@ footer {
         text-transform: uppercase;
 
         color: var(--light-color);
+        display: flex;
 
     }
 
@@ -227,6 +228,7 @@ footer {
         text-transform: uppercase;
 
         color: var(--light-color);
+        display: flex;
 
     }
 
