@@ -1,25 +1,49 @@
 .customer-reviews {
-    background-image: url(../images/customer-reviewes/ice-cream-bg-x1.png);
+    background-image: url(../images/customer-reviewes/bg-customers-mob-1x.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
 
     @include retina {
-        background-image: url(../images/customer-reviewes/ice-cream-bg-x2.png);
+        background-image: url(../images/customer-reviewes/bg-customers-mob-2x.png);
+    }
+
+    @include tablet{
+        background-image: url(../images/customer-reviewes/bg-customers-tablet-1x.png);
+        
+        @include retina {
+            background-image: url(../images/customer-reviewes/bg-customers-tablet-2x.png);
+            }
+    }
+
+    @include desktop {
+        background-image: url(../images/customer-reviewes/bg-customers-desk-1x.png);
+
+        @include retina {
+            background-image: url(../images/customer-reviewes/bg-customers-desk-2x.png);
+        }
+    }
+
+    @media screen and (min-width: 1920px) {
+        background-image: url(../images/customer-reviewes/ice-cream-bg-x1.png);
+        
+        @include retina {
+            background-image: url(../images/customer-reviewes/ice-cream-bg-x2.png);
+        }
     }
 }
 
 .customer-reviews__container {
-    padding-top: 80px;
-    padding-bottom: 48px;
+    padding-top: 186px;
+    padding-bottom: 394px;
     
     @include tablet{
-        padding-top: 60px;
-        padding-bottom: 80px;
+        padding-top: 223px;
+        padding-bottom: 384px;
     }
 
     @include desktop{
-        padding: 128px 116px 100px 116px;
+        padding: 456px 116px 196px 116px;
     }
 }
 

@@ -1,0 +1,227 @@
+.contacts {
+    background: #84A178;
+}
+
+// .some-container {
+//     margin-left: auto;
+//     margin-right: auto;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     gap: 16px;
+// }
+
+.contacts-containers {
+        margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+
+}
+
+
+.contacts-information {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+
+.contacts-container {
+width: 280px;
+background: #FCFCFC;
+box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+border-radius: 24px;
+padding-top: 40px;
+padding-bottom: 40px;
+padding-left: 32px;
+
+@include tablet {
+   width: 224px;
+}
+
+@include desktop {
+    width: 368px;
+}
+
+}
+
+.contacts-representations {
+width: 80px;
+font-family: 'Montserrat';
+font-weight: 500;
+color: var(--primary-text-color);
+background: #F8D24E;
+border-radius: 4px;
+text-transform: uppercase;
+margin-bottom: 20px;
+text-align: center;
+
+@include tablet {
+    font-size: 16px;
+}
+
+@include desktop {
+    font-size: 16px;
+}
+}
+
+
+.foodtruck {
+width: 130px;
+font-weight: 500;
+color: var(--primary-text-color);
+background: #F8D24E;
+border-radius: 4px;
+text-transform: uppercase;
+margin-bottom: 20px;
+text-align: center;
+}
+
+.contacts-name {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 186%;
+letter-spacing: 0.04em;
+color: var(--primary-text-color);
+
+@include tablet {
+    font-size: 14px;
+}
+
+@include desktop {
+    font-size: 16px;
+}
+}
+
+.contacts-adress {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 183%;
+letter-spacing: 0.04em;
+color: #D6936D;
+
+@include tablet {
+    width: 100%;
+    font-size: 14px;
+}
+
+@include desktop {
+    font-size: 16px;
+    width: 100%;
+}
+}
+
+.contacts-adress-border {
+    border-bottom: 1px solid #E1E1E1;
+    width: 216px;
+    padding-bottom: 24px;
+
+    @include tablet {
+        width: 176px;
+    }
+
+    @include desktop {
+        width: 288px;
+    }
+}
+
+.contacts-day {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 186%;
+color: var(--primary-text-color);
+margin-top: 24px;
+
+@include tablet {
+    font-size: 14px;
+}
+
+@include desktop {
+    font-size: 16px;
+}
+}
+
+.contacts-time {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 186%;
+color: #ABABAB;
+
+@include tablet {
+    font-size: 14px;
+}
+
+@include desktop {
+    font-size: 16px;
+}
+}
+
+.contacts-nav {
+margin-top: 24px;
+}
+
+.contacts-link {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+color: var(--primary-text-color);
+text-decoration: none;
+
+@include tablet {
+    font-size: 14px;
+}
+
+@include desktop {
+    font-size: 16px;
+}
+}
+
+.contacts-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 32px;
+    @include tablet {
+        width: 768px;
+        justify-content: center;
+        display: flex;
+        gap: 16px;
+        margin-top: 60px;
+
+    }
+
+    @include desktop {
+        margin-top: 64px;
+    }
+}
+
+.location-btn:last-child {
+    margin-bottom: 0;
+}
+.location-btn {
+    width: 196px;
+    height: 42px;
+    margin-bottom: 16px;
+    @include tablet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
