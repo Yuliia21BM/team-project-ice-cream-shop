@@ -36,7 +36,7 @@
         </li>
         <li class="callories-item">
           <div class="callories-number-item">4g</div>
-          <span class="callories-text"> Protein...</span>
+          <span class="callories-text"> Protein</span>
         </li>
         <li class="callories-item">
           <div class="callories-number-item">8,2g</div>
@@ -79,18 +79,16 @@
     </div>
     <form class="ingredients-modal-form">
       <div class="ingredients-input">
-        <label for="user-name" class="ingredients-input-title">Name</label>
         <input
           type="text"
           class="ingredients-input-form"
           name="user-name"
           required
           id="user-name"
-          placeholder="Name"
         />
+        <label for="user-name" class="ingredients-input-title">Name</label>
       </div>
       <div class="ingredients-input">
-        <label for="user-phone" class="ingredients-input-title">Phone</label>
         <input
           type="tel"
           class="ingredients-input-form"
@@ -98,20 +96,19 @@
           title="+380 (96) 111-11-11"
           required
           minlength="3"
-          placeholder="Phone"
         />
+        <label for="user-phone" class="ingredients-input-title">Phone</label>
       </div>
 
       <div class="ingredients-input">
+        <textarea
+          class="ingredients-input-comment"
+          name="user-comment"
+          id="user-comment"
+        ></textarea>
         <label for="user-comment" class="ingredients-input-title"
           >Comment</label
         >
-        <textarea
-          class="ingredients-input-text"
-          name="user-comment"
-          id="user-comment"
-          placeholder="Comment"
-        ></textarea>
       </div>
 
       <button type="submit" class="primary-btn">Submit</button>
