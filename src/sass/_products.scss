@@ -126,7 +126,7 @@
     border-radius: 50%;
     top: -108px;
 
-    background: url(../images/products/mob1png.png), linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    background: url(../images/products/mob1.png), linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
     box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
     background-repeat: no-repeat;
    
@@ -270,6 +270,7 @@
         line-height: 176%;
         margin-left: 64px;
         margin-right: 64px;
+        margin-bottom: 40px;
         
     }
 }
@@ -278,7 +279,7 @@
 position: absolute;
 bottom: 20px;
 background-size: cover;
-border: 5px solid rgba(0, 0, 0, 0.1);
+border: none;
 display: flex;
 align-items: center;
 justify-content: center;
