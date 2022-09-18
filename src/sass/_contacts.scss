@@ -217,6 +217,10 @@ text-decoration: none;
     width: 196px;
     height: 42px;
     margin-bottom: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     @include tablet {
         display: flex;
         justify-content: center;
