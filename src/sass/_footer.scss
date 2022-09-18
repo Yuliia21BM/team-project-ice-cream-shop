@@ -20,7 +20,7 @@ footer {
 
     &:hover  .social-icon,
     &:focus   .social-icon{
-    fill: (--light-color);
+    fill: var(--light-color);
 }
 }
 
