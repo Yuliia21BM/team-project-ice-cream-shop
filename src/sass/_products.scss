@@ -102,16 +102,16 @@
     
 }
 
-.products-item:nth-child(1) {
+.products-item:nth-child(1), .products-item:nth-child(1) button {
     background-color: #AEC6A5;
 }
 
-.products-item:nth-child(2) {
+.products-item:nth-child(2), .products-item:nth-child(2) button{
     background-color: #EFD478;
     
 }
 
-.products-item:nth-child(3) {
+.products-item:nth-child(3), .products-item:nth-child(3) button {
     background-color: #D6936D;
 }
 
@@ -252,18 +252,15 @@
     font-weight: 400;
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 90px;
-    
+    margin-bottom: 90px;    
     font-size: 14px;
     line-height: 176%;
-    /* or 25px */
-    
+    /* or 25px */    
     text-align: center;
     letter-spacing: 0.04em;
     @include tablet {
         margin-left: 26px;
-        margin-right: 26px;
-       
+        margin-right: 26px;       
     }
     @include desktop {
         font-size: 16px;
@@ -275,16 +272,29 @@
     }
 }
 
+
+
 .products-button{
-position: absolute;
-bottom: 20px;
-background-size: cover;
+background-image: url(../images/products/arrow1.png);
+background-repeat: no-repeat;
+background-position: center;
 border: none;
-display: flex;
-align-items: center;
-justify-content: center;
-    @include desktop{
-        bottom: 60px;
-    }
-    
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+bottom: 20px;
+width: 60px;
+height: 30px;
+padding: 0;
+@include desktop{
+    bottom: 60px;
+}
+}
+
+.products-button:focus {
+    background-image: url(../images/products/arrow2.png);
+}
+
+.products-button:hover{
+    background-image: url(../images/products/arrow3.png);
 }
