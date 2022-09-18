@@ -45,12 +45,23 @@
     border: none;
 }
 
+.icon-menu{
+    opacity: 1;
+    .header-memu-btn.is-open & {
+            opacity: 0;
+        }
+}
+
 .header-memu-svg{
     height: 32px;
 }
 
-.header-memu-svg .icon-cross{
-    display: none;
+.header-memu-btn .icon-cross{
+    opacity: 0;
+}
+
+.header-memu-btn.is-open .icon-cross{
+    opacity: 1;
 }
 
 .menu-set.is-hidden {
