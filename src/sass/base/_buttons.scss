@@ -13,7 +13,7 @@
     color: var(--primary-text-color);
     background-color: var(--accent);
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     
     &:hover{
         background-color: var(--primary-bg-color);
@@ -46,7 +46,7 @@
     color: var(--primary-text-color);
     background-color: transparent;
     border: 2px solid var(--accent);
-    border-radius: 5px;
+    border-radius: 8px;
 
     &:hover{
         border: var(--primary-bg-color);
