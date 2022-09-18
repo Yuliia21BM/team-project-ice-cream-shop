@@ -1,0 +1,53 @@
+
+
+@include mobile {
+
+    .modal-btm-1 {
+        font-family: 'Seymour One';
+        
+        
+        font-size: 16px;
+        line-height: 1.5;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #131313;
+    }
+    .modal-btm-2 {
+        font-family: 'Montserrat', sans-serif;
+      
+        font-size: 14px;
+        line-height: 140%;
+    
+        color: #131313;
+    }
+    
+}
+
+
+@include tablet {
+    
+    .modal-btm-1 {
+    font-family: 'Seymour One',sans-serif;
+
+    font-size: 20px;
+    line-height: 1.4;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #131313;
+    }
+
+    .modal-btm-1 {
+        font-family: 'Montserrat', sans-serif;
+     
+        font-size: 16px;
+        line-height: 140%;
+        color: #131313;
+    }
+
+   
+}
