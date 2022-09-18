@@ -1,17 +1,22 @@
 .backdrop {}
 
 .modal {
-    position: absolute;
+    // position: absolute;
     width: 280px;
     height: 459px;
     background: var(--light-color);
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-modal-close {
-    background: #FFFFFF;
+    background: var(--light-color);
     border: 0px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: transparent;
+    margin-left: 255px;
 }
 
 .modal-title {
@@ -22,16 +27,20 @@
     line-height: 1.5;
     text-align: center;
     color: var(--primary-text-color);
-    margin-top: 28px;
+    margin-top: 8px;
     margin-bottom: 28px;
 }
 
 .modal-iframe {
+    width: 224px;
+    height: 199px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    background: var(--primary-text-color);
+    border-radius: 10px;
 }
 
 .modal-text {
@@ -39,8 +48,8 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.20;
-    text-align: center;
+    line-height: 1.40;
+    text-align: left;
     color: var(--primary-text-color);
     padding-bottom: 28px;
     margin-left: 28px;
