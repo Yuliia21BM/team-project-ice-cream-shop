@@ -1,3 +1,18 @@
+.franchise-modal {
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 28px;
+   
+  
+    background: #FCFCFC;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+
+}
+
 .modall-btm-close {
     left: 90%;
   
@@ -8,23 +23,11 @@
     margin-top: -20px;
 }
 
+.submit-div {
+    text-align: center;
+}
+
 @include mobile {
-
-    .franchise-modal {
-        max-width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 28px;
-        padding-bottom: 94px;
-      
-        background: #FCFCFC;
-        border: 2px solid #F8D24E;
-        border-radius: 10px;
-
-    }
-
 
     .modal-btm-1 {
         font-family: 'Seymour One', sans-serif;
@@ -50,15 +53,18 @@
         color: #131313;
     }
     .modall-btm-submit {
-        position: absolute;
+    
         width: 114px;
         height: 42px;
-        left: 83px;
+       
         background: var( --accent);
         border-radius: 10px;
         
         border: none;
-        top: 570px;
+
+        margin-top: 24px;
+        margin-bottom: 28px;
+        
     }
 
     
@@ -90,13 +96,15 @@
     }
 
     .modall-btm-submit {
-        position: absolute;
+        
         width: 121px;
         height: 42px;
-        left: 224px;
-        top: 570px;
+        
         background: #F8D24E;
         border-radius: 10px;
+
+        margin-top: 32px;
+        margin-bottom: 32px;
     }
 
    
