@@ -24,7 +24,7 @@
               if (mouseOver) return;
               timeout = setTimeout(() => {
                 slider.next();
-              }, 2000);
+              }, 6700);
             }
             slider.on("created", () => {
               slider.container.addEventListener("mouseover", () => {
