@@ -1,32 +1,30 @@
 <section class="gallery">
-  <div class="container">
+  <div class="gallery__container container">
     <h2 class="visually-hidden">Галерея</h2>
-    <ul class="gallery__list">
-      <li class="gallery__item">
+    <ul class="gallery__list fader" id="my-keen-slider">
+      <li class="gallery__item keen-slider__slide">
         <picture class="gallery__picture">
-          <source
-            srcset="
-              ./images/gallery/desktop-gallery-1-1x-min.jpg 1x,
-              ./images/gallery/desktop-gallery-1-2x-min.jpg 2x
-            "
-            media="(min-width:1200px)"
-          />
-          <source
-            srcset="
-              ./images/gallery/tablet-gallery-1-1x-min.jpg 1x,
-              ./images/gallery/tablet-gallery-1-2x-min.jpg 2x
-            "
-            media="(min-width:768px)"
-          />
-          <source
-            srcset="
-              ./images/gallery/mob-gallery-1-1x-min.jpg 1x,
-              ./images/gallery/mob-gallery-1-2x-min.jpg 2x
-            "
-            media="(max-width:767px)"
-          />
           <img
-            src="./images/gallery/desktop-gallery-1-1x-min.jpg"
+            class="gallery__image"
+            src="./images/gallery/ice-cream-3.jpg"
+            alt="зображення галереї"
+          />
+        </picture>
+      </li>
+      <li class="gallery__item keen-slider__slide">
+        <picture class="gallery__picture">
+          <img
+            class="gallery__image"
+            src="./images/gallery/ice-cream-2.jpg"
+            alt="зображення галереї"
+          />
+        </picture>
+      </li>
+      <li class="gallery__item keen-slider__slide">
+        <picture class="gallery__picture">
+          <img
+            class="gallery__image"
+            src="./images/gallery/ice-cream-1.jpg"
             alt="зображення галереї"
           />
         </picture>
