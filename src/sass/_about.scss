@@ -1,0 +1,73 @@
+.about {
+    background: var(--primary-bg-color);
+
+}
+
+.about-container {}
+
+.about-pre-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--light-color);
+    padding-top: 60px;
+    margin-bottom: 12px;
+}
+
+.about-title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--light-color);
+    margin-bottom: 32px;
+}
+
+
+.about-picture {}
+
+.about-img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-text-top {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.21;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--light-color);
+    margin-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 4px;
+}
+
+.about-text-bot {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--light-color);
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 20px;
+}
+
+.about-btn {
+    margin-left: auto;
+    margin-right: auto;
+}

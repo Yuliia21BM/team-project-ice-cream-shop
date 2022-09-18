@@ -1,0 +1,38 @@
+.backdrop {}
+
+.modal {}
+
+.modal-close {}
+
+.modal-title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--primary-text-color);
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.modal-iframe {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.20;
+    text-align: center;
+    color: var(--primary-text-color);
+    padding-bottom: 28px;
+    margin-left: 28px;
+    margin-right: 28px;
+}
