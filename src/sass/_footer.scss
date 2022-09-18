@@ -14,14 +14,18 @@
     align-items: center;
     width: 34px;
     height: 34px;
-    background-color: var(--accent);
     border-radius: 50%;
+    
    
 
     &:hover  .social-icon,
     &:focus   .social-icon{
     fill: var(--light-colo);
 }
+}
+
+.social-icon {
+    fill: var(----primary-bg-color);
 }
 
 .phone {
@@ -144,6 +148,9 @@
         text-transform: uppercase;
 
         color: var(--light-color);
+        display: flex;
+
+
 
     }
 
