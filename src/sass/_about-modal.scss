@@ -1,8 +1,18 @@
 .backdrop {}
 
-.modal {}
+.modal {
+    position: absolute;
+    width: 280px;
+    height: 459px;
+    background: var(--light-color);
+}
 
-.modal-close {}
+.about-modal-close {
+    background: #FFFFFF;
+    border: 0px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: transparent;
+}
 
 .modal-title {
     font-family: 'Seymour One';
