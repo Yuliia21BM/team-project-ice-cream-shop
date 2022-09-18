@@ -71,3 +71,15 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.about-flex {
+    @include tablet {
+        display: flex;
+    }
+}
+
+.about-flex-text {
+    @include tablet {
+        
+    }
+}
