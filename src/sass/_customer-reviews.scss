@@ -10,16 +10,16 @@
 }
 
 .customer-reviews__container {
-    padding-top: 80px;
-    padding-bottom: 48px;
+    padding-top: 186px;
+    padding-bottom: 394px;
     
     @include tablet{
-        padding-top: 60px;
-        padding-bottom: 80px;
+        padding-top: 223px;
+        padding-bottom: 384px;
     }
 
     @include desktop{
-        padding: 128px 116px 100px 116px;
+        padding: 456px 116px 196px 116px;
     }
 }
 
