@@ -238,6 +238,14 @@
   font-size: 14px;
   line-height: 1.4;
   color: #131313;
+  &:focus,
+  &:hover {
+    border: 2px solid #0a8817;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+  }
 }
 .ingredients-input-comment:focus + .ingredients-input-title,
 .ingredients-input-comment:not(:placeholder-shown) + .ingredients-input-title {
