@@ -39,6 +39,18 @@
     color: var(--primary-text-color);
 }
 
+.modal-text-comment {
+    transform: translateY(10%);
+    left: 40px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--primary-text-color);
+    position: absolute;
+
+}
+
+
 
 
 .submit-div {
@@ -100,7 +112,6 @@
         border: 1px solid var(--primary-bg-color);
         background: #f8d24e1a;
         border-radius: 10px;
-
     }
   
 
@@ -110,6 +121,11 @@
   
 
     .modal-btm-maill {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .modal-text-comment {
         font-size: 12px;
         line-height: 1.4;
     }
@@ -188,6 +204,11 @@
     }
 
     .modal-btm-maill {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .modal-text-comment {
         font-size: 14px;
         line-height: 1.4;
     }
