@@ -23,6 +23,30 @@
     margin-top: -20px;
 }
 
+.modal-btm-maill {
+    transform: translateY(50%);
+    position: absolute;
+    left: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-text-color);
+}
+
+.modal-btm-comment {
+    transform: translateY(50%);
+    position: absolute;
+    left: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-text-color);
+}
+
+.modal-text-comment {
+    width: 100%;
+    height: 64px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid var(--primary-bg-color);
+    border-radius: 10px;
+}
+
 .submit-div {
     text-align: center;
 }
@@ -76,6 +100,17 @@
         border: 1px solid var(--primary-bg-color);
         border-radius: 10px;
     }
+
+    .modal-text-comment {
+        height: 64px;
+    }
+  
+
+    .modal-btm-maill {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
   
     .modall-btm-submit {
     
@@ -109,6 +144,10 @@
     text-align: center;
     color: #131313;
     padding-bottom: 24px;
+    }
+
+    .modal-text-comment {
+        height: 84px;
     }
 
     .modal-btm-2 {
@@ -145,12 +184,18 @@
     border-radius: 10px;
     }
 
+    .modal-btm-maill {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+
     .modall-btm-submit {
         
         width: 121px;
         height: 42px;
         
-        background: #F8D24E;
+        background: var(--accent);
         border-radius: 10px;
 
         margin-top: 32px;
