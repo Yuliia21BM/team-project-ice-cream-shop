@@ -205,6 +205,11 @@
 .ingredients-input-form:focus + .ingredients-input-title {
   transform: translateY(-38px);
 }
+
+.ingredients-input-form:required:invalid {
+  border-color: #c00000;
+}
+
 .ingredients-input-comment {
   width: 100%;
   height: 64px;
