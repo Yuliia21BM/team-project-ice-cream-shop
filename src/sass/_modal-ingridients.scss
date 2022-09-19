@@ -222,7 +222,7 @@
   transform: translateY(-38px);
 }
 
-.ingredients-input-form:required:invalid {
+.ingredients-input-form:required:invalid:focus {
   border-color: #c00000;
 }
 
