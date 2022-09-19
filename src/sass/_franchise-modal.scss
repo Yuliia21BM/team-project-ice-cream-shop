@@ -50,68 +50,6 @@
 
 }
 
-.ingredients-input-form:focus + .ingredients-input-title,
-.ingredients-input-form:not(:placeholder-shown) + .ingredients-input-title {
-  transform: translateY(-38px);
-}
-
-.ingredients-input-form:required:invalid:focus {
-  border-color: #d7de02;
-}
-
-.ingredients-input {
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.ingredients-input-form {
-    width: 100%;
-    height: 42px;
-    background: #f8d24e1a;
-    border: 1px solid #84a178;
-    border-radius: 10px;
-    outline: none;
-    padding-left: 11px;
-}
-
-.ingredients-input-title {
-    position: absolute;
-    top: 50%;
-    left: 11px;
-    transform: translateY(-50%);
-
-}
-
-.ingredients-input-title {
-    position: absolute;
-    top: 50%;
-    left: 11px;
-    transform: translateY(-50%);
-}
-
-.input-btm {
-    width: 100%;
-    border: 1px solid var(--primary-bg-color);
-    background: #f8d24e1a;
-    border-radius: 10px;
-    margin-bottom: 12px;
-    top: 472px;
-    left: 28px;
-
-}
-
-.ingredients-input-comment {
-    width: 100%;
-    height: 64px;
-    resize: none;
-    color: var(--primary-text-color);
-    background: #f8d24e1a;
-    border: 1px solid var(--primary-bg-color);
-    border-radius: 10px;
-    outline: none;
-    font-size: 14px;
-    line-height: 1.4;
-}
 
 .submit-div {
     text-align: center;
