@@ -19,14 +19,14 @@
     overflow: hidden;
     
     &:hover{
-        background-color: var(--primary-bg-color);
+        background-color: var(--primary-color-btn);
     }
     &:focus{
         color: var(--light-color);
     }
     &:disabled{
         color: var(--primary-text-color);
-        background-color: #ABABAB;
+        background-color: var(--disabled-btn);
     }
 }
 
@@ -81,14 +81,14 @@ text-align: center;
     border-radius: 8px;
 
     &:hover{
-        border: var(--primary-bg-color);
+        border: 2px solid var(--primary-color-btn);
     }
     &:focus{
         color: var(--light-color);
     }
     &:disabled{
         color: var(--primary-text-color);
-        border: #ABABAB;
+        border: 2px solid #ABABAB;
     }
 
     @include desktop{

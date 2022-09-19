@@ -160,7 +160,7 @@ background-color: var(--primary-bg-color);
     border-radius: 8px;
 
     &:hover {
-        border: var(--primary-bg-color);
+        border: 2px solid var(--primary-color-btn);
     }
 
     &:focus {
@@ -169,7 +169,7 @@ background-color: var(--primary-bg-color);
 
     &:disabled {
         color: var(--primary-text-color);
-        border: #ABABAB;
+        border: 2px solid var(--disabled-btn);
     }
 
     @include desktop {
@@ -188,6 +188,18 @@ background-color: var(--primary-bg-color);
     font-size: 8px;
     line-height: 10px;
     padding: 7px;
+
+    &:hover{
+        color: var(--primary-color-btn);
+    }
+
+    &:focus{
+        color: var(--light-color);
+    }
+
+    &:disabled{
+        color: var(--disabled-btn);
+    }
 
     @include mobile {
         font-size: 8px;
