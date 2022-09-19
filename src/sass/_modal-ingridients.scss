@@ -206,6 +206,7 @@
   border: 1px solid #84a178;
   border-radius: 10px;
   outline: none;
+  padding-left: 11px;
 
   &:focus,
   &:hover {
@@ -220,6 +221,10 @@
 .ingredients-input-form:focus + .ingredients-input-title,
 .ingredients-input-form:not(:placeholder-shown) + .ingredients-input-title {
   transform: translateY(-38px);
+}
+
+.ingredients-input-form:required:invalid:focus {
+  border-color: #c00000;
 }
 
 .ingredients-input-comment {
