@@ -33,17 +33,23 @@
     }
 }
 
-.customer-reviews__container {
+.customer-reviews{
     padding-top: 186px;
     padding-bottom: 394px;
-    
-    @include tablet{
+
+    @include tablet {
         padding-top: 223px;
         padding-bottom: 384px;
     }
+    @include desktop {
+        padding-top: 456px;
+        padding-bottom: 196px;
+    }
+}
 
+.customer-reviews__container {
     @include desktop{
-        padding: 456px 116px 196px 116px;
+        padding: 0 116px;
     }
 }
 
