@@ -84,6 +84,9 @@
 }
 
 .menu-set {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     position: absolute;
     top: 100%;
     left: 0;
@@ -164,10 +167,6 @@
 }
 
 .primary-btn.buy-btn-mob{
-    position: fixed;
-    bottom: 120px;
-    left: 50%;
-    transform: translate(-50%);
     @include tablet {
         display: none;
     }
