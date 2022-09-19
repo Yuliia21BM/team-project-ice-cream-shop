@@ -24,6 +24,7 @@
           name="user-name"
           required
           id="user-name"
+          pattern=".{6,}"
           placeholder=" "
         />
         <label for="user-name" class="ingredients-input-title">Name</label>
@@ -36,6 +37,7 @@
           title="+380 (96) 111-11-11"
           required
           minlength="3"
+          pattern=".{10,}"
           placeholder=" "
         />
         <label for="user-phone" class="ingredients-input-title">Phone</label>
@@ -58,6 +60,7 @@
           class="ingredients-input-comment"
           name="user-comment"
           id="user-comment"
+          pattern=".{10,}"
           placeholder=" "
         ></textarea>
         <label for="user-comment" class="ingredients-input-title"
