@@ -11,11 +11,27 @@
       </svg>
     </button>
     <h3 class="modal-title-location">Our Locations</h3>
-    <img
-      src="./images/location-modal/location-mob-poltava.png"
-      alt="Location-Poltava"
-    />
-    <button type="button">Open map</button>
+    <picture>
+                            <source class="modal-location-img"
+                            srcset="./images/location-modal/location-tab-poltava-1x.png 1x,
+                                    ./images/location-modal/location-tab-poltava-2x.png 2x"
+                                    media="(min-width:1200px)"
+                                    />
+
+                                    <source  class="modal-location-img"
+                            srcset="./images/location-modal/location-tab-poltava-1x.png 1x,
+                                    ./images/location-modal/location-tab-poltava-2x.png 2x"
+                                    media="(min-width:768px)"
+                                    />
+
+                                    <source  class="modal-location-img"
+                            srcset="./images/location-modal/location-mob-poltava-1x.png 1x,
+                                    ./images/location-modal/location-mob-poltava-2x.png 2x"
+                                    media="(max-width:767px)"
+                                    />
+                            <img class="modal-location-img" src="./images/location-modal/location-mob-poltava.png" alt="Мапа" />
+                           </picture>
+    <button class="primary-btn open-map-btn" type="button">Open map</button>
   </div>
 </div>
 
