@@ -11,17 +11,21 @@
 .modal-ingrid {
   position: absolute;
   width: calc(100% - 30px);
+  max-width: 290px;
   min-height: 990px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -30%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
   padding: 20px 28px 20px 32px;
+  margin-top: 75px;
 
   @media screen and (min-width: 768px) {
-    width: 528px;
+    width: 568px;
+    max-width: 568px;
+    min-height: 995px;
   }
 }
 .bbackdrop-ingrid.is-hidden .modal-ingrid {
