@@ -1,9 +1,11 @@
 .primary-btn{
+    position: relative;
     display: flex;
     align-items: center;
     text-align: center;
     padding: 12px 34px;
     text-align: center;
+    height: 36px;
 
     font-family: inherit;
     font-weight: 600;
@@ -14,6 +16,7 @@
     background-color: var(--accent);
     border: none;
     border-radius: 10px;
+    overflow: hidden;
     
     &:hover{
         background-color: var(--primary-bg-color);
@@ -27,6 +30,33 @@
     }
 }
 
+// .menu-svg-one {
+//     margin-left: 5px;
+//     transition: transform 250ms linear;
+//     .primary-btn:hover &,
+//     .primary-btn:focus & {
+//         transform: translateY(-40px);
+//     }
+// }
+
+// .menu-svg-two {
+//     position: absolute;
+//     top: 33%;
+//     right: 35px;
+//     fill: currentColor;
+
+//     transform: translateY(40px);
+//     transition: transform 250ms linear;
+
+//     .primary-btn:hover &,
+//     .primary-btn:focus & {
+//         transform: translateY(0);
+//     }
+// }
+
+.primary-btn-svg{
+    fill:currentColor;
+    height: 12px;
 .primary-btn-svg {
     fill:currentColor
 }
