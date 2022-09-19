@@ -1,6 +1,6 @@
-<div class="backdrop-ingrid is-hidden" data-modal-ingrid>
+<div class="backdrop-ingrid is-hidden" data-modal-ingrid-2>
   <div class="modal-ingrid">
-    <button type="button" class="modal-ingrid-close" data-modal-ingrid-close>
+    <button type="button" class="modal-ingrid-close" data-modal-ingrid-close-2>
       <svg class="modal-ingrid-cross" width="20" height="20">
         <use
           href="./images/modal-ingridients/icon.svg#icon-close-black-18dp-2-1"
@@ -86,8 +86,6 @@
           required
           id="user-name"
           placeholder=" "
-          pattern=".{6,}"
-          title="Name shall contain minimum 6 letters"
         />
         <label for="user-name" class="ingredients-input-title">Name</label>
       </div>
@@ -96,11 +94,10 @@
           type="tel"
           class="ingredients-input-form"
           name="user-tel"
+          title="+380 (96) 111-11-11"
           required
           minlength="3"
           placeholder=" "
-          pattern=".{10,}"
-          title="+38 000 000 00 00"
         />
         <label for="user-phone" class="ingredients-input-title">Phone</label>
       </div>
@@ -111,7 +108,6 @@
           name="user-comment"
           id="user-comment"
           placeholder=" "
-          pattern=".{10,}"
         ></textarea>
         <label for="user-comment" class="ingredients-input-title"
           >Comment</label
@@ -122,5 +118,4 @@
     </form>
   </div>
 </div>
-<script src="./js/ingrid-modal.js"></script>
-<!-- <script src="./js/ingrid-modal-1.js"></script> -->
+<script src="./js/ingrid-modal-2.js"></script>
