@@ -30,35 +30,36 @@
     }
 }
 
-// .menu-svg-one {
-//     margin-left: 5px;
-//     transition: transform 250ms linear;
-//     .primary-btn:hover &,
-//     .primary-btn:focus & {
-//         transform: translateY(-40px);
-//     }
-// }
-
-// .menu-svg-two {
-//     position: absolute;
-//     top: 33%;
-//     right: 35px;
-//     fill: currentColor;
-
-//     transform: translateY(40px);
-//     transition: transform 250ms linear;
-
-//     .primary-btn:hover &,
-//     .primary-btn:focus & {
-//         transform: translateY(0);
-//     }
-// }
-
-.primary-btn-svg{
-    fill:currentColor;
-    height: 12px;
-    transition: fill $animation-time $animation-cubic, visibility $animation-time;
+.menu-svg-one {
+    margin-left: 5px;
+    height: 20px;
+    transition: transform 250ms linear;
+    .primary-btn:hover &,
+    .primary-btn:focus & {
+        transform: translateY(-40px);
+    }
 }
+
+.menu-svg-two {
+    position: absolute;
+    top: 39%;
+    right: 35px;
+    fill: currentColor;
+
+    transform: translateY(40px);
+    transition: transform 250ms linear;
+
+    .primary-btn:hover &,
+    .primary-btn:focus & {
+        transform: translateY(0);
+    }
+}
+
+// .primary-btn-svg{
+//     fill:currentColor;
+//     height: 12px;
+//     transition: fill $animation-time $animation-cubic, visibility $animation-time;
+// }
 
 .modal__send-button{
 display: flex;
