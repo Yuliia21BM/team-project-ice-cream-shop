@@ -82,8 +82,8 @@ background-color: var(--primary-bg-color);
         line-height: 33px;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        width: 247px;
-
+        animation-delay: 500ms;
+        
         @include mobile {
             font-size: 26px;
             line-height: 33px;
@@ -141,6 +141,18 @@ background-color: var(--primary-bg-color);
         background-color: transparent;
         border: 0;
         padding: 0;
+        width: 50px;
+        height: 16px;
+        background-image: url(../images/hero/arrow-two.png);
+        background-repeat: no-repeat;
+background-position: center;
+          &:focus {
+        background-image: url(../images/hero/arrow-white.png);
+    }
+
+           &:hover {
+        background-image: url(../images/hero/arrow-white2.png);
+    }
     }
 }
 
@@ -223,6 +235,7 @@ background-color: var(--primary-bg-color);
 
 .benefits {
     display: none;
+    animation-delay: 700ms;
 
     @include mobile {
         display: none;
@@ -270,6 +283,7 @@ background-color: var(--primary-bg-color);
             @include desktop {
                 font-size: 14px;
                 line-height: 17px;
+                text-transform: none;
             }
         }
     }
