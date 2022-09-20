@@ -1,10 +1,12 @@
 .header{
-    position: fixed;
+    position:absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     padding-top: 12px;
     padding-bottom: 6px;
     z-index: 100;
-    background-color: var(--primary-bg-color);
+    background-color:transparent;
 }
 
 .header-nav {
@@ -84,6 +86,9 @@
 }
 
 .menu-set {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     position: absolute;
     top: 100%;
     left: 0;
@@ -164,10 +169,6 @@
 }
 
 .primary-btn.buy-btn-mob{
-    position: fixed;
-    bottom: 120px;
-    left: 50%;
-    transform: translate(-50%);
     @include tablet {
         display: none;
     }

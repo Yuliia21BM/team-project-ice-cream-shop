@@ -63,6 +63,17 @@
         }
 }
 
+.about-img:hover {
+    filter: drop-shadow(0px -25px 30px rgba(248, 210, 78, 0.7));
+    @include tablet {
+            filter: drop-shadow(0px -35px 30px rgba(248, 210, 78, 0.7));
+        }
+    
+        @include desktop {
+            filter: drop-shadow(0px -45px 30px rgba(248, 210, 78, 0.7));
+        }
+}
+
 .about-text {
     @include tablet {
         // max-width: 336px;
