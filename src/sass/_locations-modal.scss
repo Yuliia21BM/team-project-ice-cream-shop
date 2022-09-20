@@ -46,6 +46,15 @@ transition: transform $animation-time $animation-cubic;
     }
 }
 
+.modal-location-svg{
+    fill: var(--primary-text-color);
+    transition: fill $animation-time $animation-cubic;
+    &:hover,
+    &:focus {
+        fill:var(--accent);
+    }
+}
+
 
 .modal-title-location {
     font-family: 'Seymour One';
@@ -60,12 +69,21 @@ transition: transform $animation-time $animation-cubic;
     }
 }
 
-.modal-location-img {
-    width: 100%;
-    padding-left: 28px;
-    padding-right: 28px;
+.modal-location-map {
+    width: 224px;
     margin-bottom: 24px;
     @include tablet {
+        width: 448px;
         margin-bottom: 32px;
+    }
+}
+
+.open-map-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 135px;
+    @include tablet{
+        max-width: 145px;
     }
 }
