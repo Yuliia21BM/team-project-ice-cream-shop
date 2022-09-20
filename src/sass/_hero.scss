@@ -158,6 +158,8 @@ background-color: var(--primary-bg-color);
     background-color: transparent;
     border: 2px solid var(--accent);
     border-radius: 8px;
+    transition-property: color, border;
+    transition: $animation-time $animation-cubic;
 
     &:hover {
         border: 2px solid var(--primary-color-btn);
@@ -188,6 +190,7 @@ background-color: var(--primary-bg-color);
     font-size: 8px;
     line-height: 10px;
     padding: 7px;
+    transition: color $animation-time $animation-cubic;
 
     &:hover{
         color: var(--primary-color-btn);
@@ -281,7 +284,6 @@ background-color: var(--primary-bg-color);
     line-height: 140%;
     width: 151px;
     color: var(--light-color);
-    /* or 17px */
 
     @include mobile {
         display: none;

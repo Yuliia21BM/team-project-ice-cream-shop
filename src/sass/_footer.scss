@@ -73,9 +73,10 @@ footer {
 }
 
 .social-icon {
-    fill: #84A178;
-        width: 20px;
-        height: 20px;
+    fill: var(--primary-bg-color);
+    width: 20px;
+    height: 20px;
+    transform: fill $animation-time $animation-cubic;
 }
 
 .phone {
