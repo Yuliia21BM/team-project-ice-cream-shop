@@ -60,15 +60,14 @@
         padding-top: 104px;
         box-sizing: border-box;
         background-image:
-            url(../images/hero/plate-icecream.png),
             url(../images/hero/green-eyes-tablet.png),
             url(../images/hero/orange-eyes-tablet.png),
             url(../images/hero/pink-eyes-tablet.png),
             url(../images/hero/hero-icecream-tablet.png),
             url(../images/hero/shadow-tablet.png),
             url(../images/hero/dotts-tablet.png);
-        background-position: left 32px bottom 13px, left 531px bottom 196px, left 458px bottom 153px, left 541px bottom 78px, left 418px bottom 0, left 380px bottom -45px, left bottom;
-        background-size: 152px, auto, auto, auto, auto, auto, auto;
+        background-position: left 531px bottom 196px, left 458px bottom 153px, left 541px bottom 78px, left 418px bottom 0, left 380px bottom -45px, left bottom;
+        background-size: auto, auto, auto, auto, auto, auto;
     }
 
     @include desktop {
@@ -77,15 +76,14 @@
         padding-top: 118px;
         box-sizing: border-box;
         background-image:
-            url(../images/hero/plate-icecream.png),
             url(../images/hero/green-eyes-desktop.png),
             url(../images/hero/orange-eyes-desktop.png),
             url(../images/hero/pink-eyes-desktop.png),
             url(../images/hero/hero-icecream-desktop.png),
             url(../images/hero/shadow-desctop.png),
             url(../images/hero/dotts-desktop.png);
-        background-position: left 17px bottom 65px, left 857px bottom 342px, left 723px bottom 266px, left 873px bottom 138px, left 651px bottom, left 600px bottom -55px, left 50% bottom 0;
-        background-size: 225px, auto, auto, auto, auto, auto, auto;
+        background-position: left 857px bottom 342px, left 723px bottom 266px, left 873px bottom 138px, left 651px bottom, left 600px bottom -55px, left 50% bottom 0;
+        background-size: auto, auto, auto, auto, auto, auto;
 
     }
 }
@@ -186,6 +184,7 @@
     }
 
     &-btn {
+        display: block;
         background-color: transparent;
         border: 0;
         padding: 0;
@@ -194,16 +193,53 @@
         background-image: url(../images/hero/arrow-two.png);
         background-repeat: no-repeat;
         background-position: center;
+        transform: scale(1);
+        transition: transform 250ms ;
 
-        &:focus {
-            background-image: url(../images/hero/arrow-white.png);
+        &:focus,
+        &:hover {
+            transform: scale(1.5);
         }
 
-        &:hover {
-            background-image: url(../images/hero/arrow-white2.png);
+    }
+}
+
+.plate-bg {
+    position: absolute;
+    background-image:
+        url(../images/hero/plate-icecream.png);
+    background-repeat: no-repeat;
+
+    @include tablet {
+        bottom: -5px;
+        left: -185px;
+        width: 152px;
+        height: 152px;
+        background-size: 152px;
+    }
+
+    @include desktop {
+        bottom: -25px;
+        left: -240px;
+        width: 225px;
+        height: 225px;
+        background-size: 225px;
+
+    }
+}
+
+.hero-btn:hover+.plate-bg {
+    animation: spin 4000ms linear infinite;
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
         }
     }
-    
 }
 
 .secondary-btn {
@@ -344,6 +380,7 @@
 }
 
 .hero-text-block {
+    position: absolute;
     display: none;
     font-family: 'Montserrat';
     font-style: normal;
