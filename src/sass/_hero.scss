@@ -82,7 +82,7 @@ background-color: var(--primary-bg-color);
         line-height: 33px;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-animation-delay: 500ms;
+        animation-delay: 500ms;
         
         @include mobile {
             font-size: 26px;
@@ -235,6 +235,7 @@ background-position: center;
 
 .benefits {
     display: none;
+    animation-delay: 700ms;
 
     @include mobile {
         display: none;
@@ -282,6 +283,7 @@ background-position: center;
             @include desktop {
                 font-size: 14px;
                 line-height: 17px;
+                text-transform: none;
             }
         }
     }
