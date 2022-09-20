@@ -76,7 +76,7 @@ footer {
     fill: var(--primary-bg-color);
     width: 20px;
     height: 20px;
-    transform: fill $animation-time $animation-cubic;
+    transition: fill $animation-time $animation-cubic;
 }
 
 .phone {
