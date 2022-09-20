@@ -1,10 +1,12 @@
 .header{
-    position: fixed;
+    position:absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     padding-top: 12px;
     padding-bottom: 6px;
     z-index: 100;
-    background-color: var(--primary-bg-color);
+    background-color:transparent;
 }
 
 .header-nav {
