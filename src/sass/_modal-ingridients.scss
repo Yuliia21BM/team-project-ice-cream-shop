@@ -302,18 +302,18 @@
     transition: border 150ms $animation-cubic, visibility 150ms;
     @media screen and (max-width: 479px) {   
         width: 100%; 
-        padding: 8px 12px 39px 12px;
+        padding: 8px 12px;
         margin-bottom: 24px;
     }
     @media screen and (min-width: 480px)and (max-width: 767px) {
         width: 224px; 
-        padding: 8px 12px 39px 12px;
+        padding: 8px 12px;
         margin-bottom: 24px;
     }
     @media screen and (min-width: 768px) {   
         display: block;
         width: 368px; 
-        padding: 11px 16px 53px 16px;
+        padding: 11px 16px;
         margin-bottom: 32px;
         margin-left: auto;
         margin-right: auto;
@@ -337,7 +337,7 @@
     &:not(:placeholder-shown) + .ingredients-input-title-comment {
         transform: translateY(-40px);
         @media screen and (max-width: 479px) {
-          transform: translateY(-26px);
+          transform: translateY(-21px);
       }
     }
 }
