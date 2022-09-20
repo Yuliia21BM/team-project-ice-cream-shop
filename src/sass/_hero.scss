@@ -1,6 +1,23 @@
 .background {
     background-color: var(--primary-bg-color);
-        width: 100%;
+    width: 100%;
+    height: 502px;
+    padding-top: 110px;
+    box-sizing: border-box;
+    background-image:
+        url(../images/hero/green-eyes-mobile.png),
+        url(../images/hero/orange-eyes-mobile.png),
+        url(../images/hero/pink-eyes-mobile.png),
+        url(../images/hero/hero-icecream-mobile.png),
+        url(../images/hero/shadow-mobile.png),
+        url(../images/hero/dotts-mobile.png);
+    background-repeat: no-repeat;
+    background-position: left 153px bottom 125px, left 107px bottom 98px, left 159px bottom 49px, left 82px bottom, left 45px bottom -35px, left 50% bottom;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mobile {
+        max-width: 480px;
         height: 502px;
         padding-top: 110px;
         box-sizing: border-box;
@@ -11,65 +28,47 @@
             url(../images/hero/hero-icecream-mobile.png),
             url(../images/hero/shadow-mobile.png),
             url(../images/hero/dotts-mobile.png);
-        background-repeat: no-repeat;
         background-position: left 153px bottom 125px, left 107px bottom 98px, left 159px bottom 49px, left 82px bottom, left 45px bottom -35px, left 50% bottom;
-        margin-left: auto;
-        margin-right: auto;
-    
-    
-        @include mobile {
-            max-width: 480px;
-            height: 502px;
-            padding-top: 110px;
-            box-sizing: border-box;
-            background-image:
-                url(../images/hero/green-eyes-mobile.png),
-                url(../images/hero/orange-eyes-mobile.png),
-                url(../images/hero/pink-eyes-mobile.png),
-                url(../images/hero/hero-icecream-mobile.png),
-                url(../images/hero/shadow-mobile.png),
-                url(../images/hero/dotts-mobile.png);
-            background-position: left 153px bottom 125px, left 107px bottom 98px, left 159px bottom 49px, left 82px bottom, left 45px bottom -35px, left 50% bottom;
-        }
-    
-        @include tablet {
-            max-width: 786px;
-            height: 415px;
-            padding-top: 104px;
-            box-sizing: border-box;
-            background-image:
-                url(../images/hero/plate-icecream.png),
-                url(../images/hero/green-eyes-tablet.png),
-                url(../images/hero/orange-eyes-tablet.png),
-                url(../images/hero/pink-eyes-tablet.png),
-                url(../images/hero/hero-icecream-tablet.png),
-                url(../images/hero/shadow-tablet.png),
-                url(../images/hero/dotts-tablet.png);
-            background-position: left 32px bottom 13px, left 531px bottom 196px, left 458px bottom 153px, left 541px bottom 78px, left 418px bottom 0, left 380px bottom -45px, left bottom;
-            background-size: 152px, auto, auto, auto, auto, auto, auto;
-        }
-    
-        @include desktop {
-            max-width: 1200px;
-            height: 664px;
-            padding-top: 118px;
-            box-sizing: border-box;
-            background-image:
-                url(../images/hero/plate-icecream.png),
-                url(../images/hero/green-eyes-desktop.png),
-                url(../images/hero/orange-eyes-desktop.png),
-                url(../images/hero/pink-eyes-desktop.png),
-                url(../images/hero/hero-icecream-desktop.png),
-                url(../images/hero/shadow-desctop.png),
-                url(../images/hero/dotts-desktop.png);
-            background-position: left 17px bottom 65px, left 857px bottom 342px, left 723px bottom 266px, left 873px bottom 138px, left 651px bottom, left 600px bottom -55px, left 50% bottom 0;
-            background-size: 225px, auto, auto, auto, auto, auto, auto;
-    
-        }
+    }
+
+    @include tablet {
+        max-width: 786px;
+        height: 415px;
+        padding-top: 104px;
+        box-sizing: border-box;
+        background-image:
+            url(../images/hero/plate-icecream.png),
+            url(../images/hero/green-eyes-tablet.png),
+            url(../images/hero/orange-eyes-tablet.png),
+            url(../images/hero/pink-eyes-tablet.png),
+            url(../images/hero/hero-icecream-tablet.png),
+            url(../images/hero/shadow-tablet.png),
+            url(../images/hero/dotts-tablet.png);
+        background-position: left 32px bottom 13px, left 531px bottom 196px, left 458px bottom 153px, left 541px bottom 78px, left 418px bottom 0, left 380px bottom -45px, left bottom;
+        background-size: 152px, auto, auto, auto, auto, auto, auto;
+    }
+
+    @include desktop {
+        max-width: 1200px;
+        height: 664px;
+        padding-top: 118px;
+        box-sizing: border-box;
+        background-image:
+            url(../images/hero/plate-icecream.png),
+            url(../images/hero/green-eyes-desktop.png),
+            url(../images/hero/orange-eyes-desktop.png),
+            url(../images/hero/pink-eyes-desktop.png),
+            url(../images/hero/hero-icecream-desktop.png),
+            url(../images/hero/shadow-desctop.png),
+            url(../images/hero/dotts-desktop.png);
+        background-position: left 17px bottom 65px, left 857px bottom 342px, left 723px bottom 266px, left 873px bottom 138px, left 651px bottom, left 600px bottom -55px, left 50% bottom 0;
+        background-size: 225px, auto, auto, auto, auto, auto, auto;
+
+    }
 }
 
 .hero {
-background-color: var(--primary-bg-color);
+    background-color: var(--primary-bg-color);
     width: 100%;
     position: relative;
 
@@ -82,7 +81,7 @@ background-color: var(--primary-bg-color);
         line-height: 33px;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        width: 247px;
+        animation-delay: 500ms;
 
         @include mobile {
             font-size: 26px;
@@ -141,6 +140,19 @@ background-color: var(--primary-bg-color);
         background-color: transparent;
         border: 0;
         padding: 0;
+        width: 50px;
+        height: 16px;
+        background-image: url(../images/hero/arrow-two.png);
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &:focus {
+            background-image: url(../images/hero/arrow-white.png);
+        }
+
+        &:hover {
+            background-image: url(../images/hero/arrow-white2.png);
+        }
     }
 }
 
@@ -158,6 +170,8 @@ background-color: var(--primary-bg-color);
     background-color: transparent;
     border: 2px solid var(--accent);
     border-radius: 8px;
+    transition-property: color, border;
+    transition: $animation-time $animation-cubic;
 
     &:hover {
         border: 2px solid var(--primary-color-btn);
@@ -188,16 +202,17 @@ background-color: var(--primary-bg-color);
     font-size: 8px;
     line-height: 10px;
     padding: 7px;
+    transition: color $animation-time $animation-cubic;
 
-    &:hover{
+    &:hover {
         color: var(--primary-color-btn);
     }
 
-    &:focus{
+    &:focus {
         color: var(--light-color);
     }
 
-    &:disabled{
+    &:disabled {
         color: var(--disabled-btn);
     }
 
@@ -220,6 +235,7 @@ background-color: var(--primary-bg-color);
 
 .benefits {
     display: none;
+    animation-delay: 700ms;
 
     @include mobile {
         display: none;
@@ -267,6 +283,7 @@ background-color: var(--primary-bg-color);
             @include desktop {
                 font-size: 14px;
                 line-height: 17px;
+                text-transform: none;
             }
         }
     }
@@ -281,7 +298,6 @@ background-color: var(--primary-bg-color);
     line-height: 140%;
     width: 151px;
     color: var(--light-color);
-    /* or 17px */
 
     @include mobile {
         display: none;
