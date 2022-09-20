@@ -1,5 +1,5 @@
 .header{
-    position:absolute;
+    position:fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -121,6 +121,7 @@
 
     @include tablet{
         padding-top: 62px;
+        padding-bottom: 62px;
     }
 
     @include desktop {
