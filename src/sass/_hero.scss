@@ -241,6 +241,19 @@
         }
     }
 }
+.hero-btn:focus+.plate-bg {
+    animation: spin 4000ms linear infinite;
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
 
 .secondary-btn {
     display: flex;
