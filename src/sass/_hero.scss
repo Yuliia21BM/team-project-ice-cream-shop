@@ -1,5 +1,28 @@
 .background {
     background-color: var(--primary-bg-color);
+        animation: bg-color 10s infinite;
+    
+        @keyframes bg-color {
+            0% {
+                background-color: var(--primary-bg-color);
+            }
+    
+            25% {
+                background-color: #f59935;
+            }
+    
+            50% {
+                background-color: #ed61a2;
+            }
+    
+            75% {
+                background-color: #72c487;
+            }
+
+            100% {
+                background-color: var(--primary-bg-color);
+            }
+        }
     width: 100%;
     height: 502px;
     padding-top: 110px;
@@ -72,6 +95,32 @@
     width: 100%;
     position: relative;
 
+            background-color: var(--primary-bg-color);
+            animation: bg-color 10s infinite;
+    
+            @keyframes bg-color {
+                0% {
+                        background-color: var(--primary-bg-color);
+                    }
+                
+                    25% {
+                        background-color: #f59935;
+                    }
+                
+                    50% {
+                        background-color: #ed61a2;
+                    }
+                
+                    75% {
+                        background-color: #72c487;
+                    }
+                
+                    100% {
+                        background-color: var(--primary-bg-color);
+                    }
+            }
+
+    
     &-title {
         color: var(--light-color);
         font-family: 'Seymour One';
@@ -154,6 +203,7 @@
             background-image: url(../images/hero/arrow-white2.png);
         }
     }
+    
 }
 
 .secondary-btn {
@@ -235,7 +285,6 @@
 
 .benefits {
     display: none;
-    animation-delay: 700ms;
 
     @include mobile {
         display: none;
@@ -253,6 +302,12 @@
         gap: 16px;
     }
 
+    &-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    }
+
     &-item {
         font-family: 'Montserrat';
         font-style: normal;
@@ -263,18 +318,17 @@
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: #131313;
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
+      
 
         @include desktop {
             font-size: 46px;
             line-height: 56px;
         }
 
-        & span {
+        &-text {
             font-family: 'Montserrat';
             font-style: normal;
+            text-align: right;
             font-weight: 400;
             font-size: 8px;
             line-height: 10px;
