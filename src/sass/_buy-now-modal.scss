@@ -6,11 +6,11 @@
     z-index: 1000;
     top: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     background-color:rgba(248, 211, 78, 0.252);
     
     @media screen and (max-width: 767px) {
-        position: absolute;
+        position: fixed;
         overflow-y: scroll;
     }
     @media screen and (min-width: 768px) {
@@ -37,21 +37,21 @@
     border-radius: 10px;
     transition: transform $animation-time $animation-cubic, visibility $animation-time;
     @media screen and (max-width: 479px) {
-        transform: translate(-50%, -30%) scale(1);
+        transform: translate(-50%, -43%) scale(1);
         max-width: 100%;
         min-height: 986px;
         padding: 30px;
     }
     @media screen and (min-width: 480px) and (max-width: 767px) {
-        transform: translate(-50%, -30%) scale(1);
+        transform: translate(-50%, -43%) scale(1);
         width: 280px;
-        height: 986px;
+        min-height: 986px;
         padding: 30px;
     }
     @media screen and (min-width: 768px) {
         transform: translate(-50%, -50%) scale(1);
         width: 568px; 
-        height: 644px;
+        min-height: 644px;
         padding: 32px 54px;
     } 
 }
@@ -248,10 +248,77 @@
     color: var(--primary-text-color);
 }
 
+.modal-buy-now__form {
+    position: relative;
+    @media screen and (min-width: 768px) {  
+        margin-bottom: 20px;
+    }
+    &:last-of-type {
+        @media screen and (min-width: 768px) {  
+             margin-bottom: 32px;
+        }
+    }
+}
+
+.modal-buy-now__input-title {
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.40;
+    color: var(--primary-text-color);
+    @media screen and (max-width: 479px) {   
+        top: 40%;
+        left: auto;
+        right: auto; 
+        font-size: 12px;
+    }
+    @media screen and (max-width: 767px) {
+        transform: translateY(-80%);
+        left: 15px;
+        top: 50%;
+        font-size: 12px;
+        
+    }
+    @media screen and (min-width: 768px) {   
+        transform: translateY(-50%);
+        left: 60px;
+        top: 50%;
+        font-size: 14px;
+    }
+}
+
+.modal-buy-now__input-title-comment {
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.40;
+    color: var(--primary-text-color);
+    @media screen and (max-width: 479px) {   
+        top: 40%;
+        left: auto;
+        right: auto;
+        font-size: 12px;
+    }
+    @media screen and (max-width: 767px) {
+        transform: translateY(-80%);
+        left: 15px;
+        top: 20%;
+        font-size: 12px;
+    }
+    @media screen and (min-width: 768px) {   
+        transform: translateY(-50%);
+        left: 60px;
+        top: 20%;
+        font-size: 14px;
+    }
+}
+
 .modal-buy-now__form-input {
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid var(--primary-bg-color);
     border-radius: 10px;
+    outline: none;
+    transition: border 150ms $animation-cubic, visibility 150ms;
     @media screen and (max-width: 479px) {   
         width: 100%; 
         padding: 8px 12px 8px 12px;
@@ -270,55 +337,77 @@
         margin-left: auto;
         margin-right: auto;
     }
-    &::placeholder {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.40;
-        color: var(--primary-text-color);
-        @media screen and (max-width: 767px) {
-            font-size: 12px;
-        }
-        @media screen and (min-width: 768px) {    
-            font-size: 14px;
-        }
-    }
+    &:focus,
+    &:hover {
+        border: 2px solid #0a8817;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.29;
+  }
+    &:valid:focus {
+        border-color: #0a8817;
 }
+    &:invalid:focus {
+        border-color: #c00000;
+  }
+}
+
+.modal-buy-now__form-input:focus + .modal-buy-now__input-title,
+.modal-buy-now__form-input:not(:placeholder-shown) + .modal-buy-now__input-title {
+  transform: translateY(-40px);
+}
+
+
 
 .modal-buy-now__user-comment{
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid var(--primary-bg-color);
     border-radius: 10px;
     resize: none;
+    outline: none;
+    transition: border 150ms $animation-cubic, visibility 150ms;
     @media screen and (max-width: 479px) {   
         width: 100%; 
-        padding: 8px 12px 8px 12px;
+        padding: 8px 12px 39px 12px;
         margin-bottom: 24px;
     }
     @media screen and (min-width: 480px)and (max-width: 767px) {
         width: 224px; 
-        padding: 8px 12px 8px 12px;
+        padding: 8px 12px 39px 12px;
         margin-bottom: 24px;
     }
     @media screen and (min-width: 768px) {   
         display: block;
         width: 368px; 
-        padding: 11px 16px 11px 16px;
+        padding: 11px 16px 53px 16px;
         margin-bottom: 32px;
         margin-left: auto;
         margin-right: auto;
     }
-    &::placeholder {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.40;
-        color: var(--primary-text-color);
-        @media screen and (max-width: 767px) {
-            font-size: 12px;
-        }
-        @media screen and (min-width: 768px) {    
-            font-size: 14px;
-        }
+    &:focus,
+    &:hover {
+        border: 2px solid #0a8817;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.29;
+    }
+}
+
+.modal-buy-now__user-comment:focus + .modal-buy-now__input-title-comment,
+.modal-buy-now__user-comment:not(:placeholder-shown) + .modal-buy-now__input-title-comment {
+  transform: translateY(-40px);
+  @media screen and (max-width: 767px) {
+    transform: translateY(-37px);
+  }
+}
+
+.modal-buy-now__send-button{
+    @media screen and (max-width: 767px) {
+        margin-bottom: 28px;
+    }
+    @media screen and (min-width: 768px) {  
+        margin-bottom: 32px;
     }
 }
