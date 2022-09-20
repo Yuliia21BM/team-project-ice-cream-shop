@@ -94,7 +94,7 @@
     padding: 28px;
     margin-top: 75px;
     transition: transform $animation-time $animation-cubic;
-
+    }
     @include tablet {
         width: 568px;
         padding: 32px 54px;
