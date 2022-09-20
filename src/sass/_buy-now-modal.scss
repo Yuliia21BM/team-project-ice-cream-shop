@@ -6,11 +6,11 @@
     z-index: 1000;
     top: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     background-color:rgba(248, 211, 78, 0.252);
     
     @media screen and (max-width: 767px) {
-        position: absolute;
+        position: fixed;
         overflow-y: scroll;
     }
     @media screen and (min-width: 768px) {
@@ -37,15 +37,15 @@
     border-radius: 10px;
     transition: transform $animation-time $animation-cubic, visibility $animation-time;
     @media screen and (max-width: 479px) {
-        transform: translate(-50%, -30%) scale(1);
+        transform: translate(-50%, -43%) scale(1);
         max-width: 100%;
         min-height: 986px;
         padding: 30px;
     }
     @media screen and (min-width: 480px) and (max-width: 767px) {
-        transform: translate(-50%, -30%) scale(1);
+        transform: translate(-50%, -43%) scale(1);
         width: 280px;
-        height: 986px;
+        min-height: 986px;
         padding: 30px;
     }
     @media screen and (min-width: 768px) {
@@ -403,7 +403,7 @@
   }
 }
 
-.modal-buy-now__send-button {
+.modal-buy-now__send-button{
     @media screen and (max-width: 767px) {
         margin-bottom: 28px;
     }
