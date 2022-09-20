@@ -66,12 +66,12 @@
           class="modal-buy-now__form-input"
           type="text"
           name="user-name"
-          id="modal-buy-now__form-input"
+          id="modal-buy-now-name"
           placeholder=" "
           required
           pattern=".{6,}"
         />
-        <label for="user-comment" class="modal-buy-now__input-title"
+        <label for="modal-buy-now-name" class="modal-buy-now__input-title"
           >Name</label
         >
       </div>
@@ -81,12 +81,12 @@
           class="modal-buy-now__form-input"
           type="text"
           name="user-tel"
-          id="modal-buy-now__form-input"
+          id="modal-buy-now-phone"
           placeholder=" "
           required
           pattern=".{10,}"
         />
-        <label for="user-comment" class="modal-buy-now__input-title"
+        <label for="modal-buy-now-phone" class="modal-buy-now__input-title"
           >Phone</label
         >
       </div>
@@ -95,11 +95,13 @@
         <textarea
           class="modal-buy-now__user-comment"
           name="user-comment"
-          id="modal-buy-now__user-comment"
+          id="modal-buy-now-comment"
           placeholder=" "
           pattern=".{10,}"
         ></textarea>
-        <label for="user-comment" class="modal-buy-now__input-title-comment"
+        <label
+          for="modal-buy-now-comment"
+          class="modal-buy-now__input-title-comment"
           >Comment</label
         >
       </div>
