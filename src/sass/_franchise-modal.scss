@@ -22,7 +22,7 @@
     background: #fcfcfc;
     border: 2px solid #f8d24e;
     border-radius: 10px;
-    padding: 28px;
+    padding: 32px;
     margin-top: 75px;
     transition: transform $animation-time $animation-cubic;
 
@@ -97,7 +97,7 @@
         color: var(--primary-text-color);
     }
     .modal-btm-2 {
-        width: 100%;
+        width: 448px;
         font-family: 'Montserrat', sans-serif;
       
         font-size: 14px;
@@ -136,6 +136,7 @@
         border-radius: 10px;
     }
 
+    
     .ingredients-input-comment {
         height: 64px;
         font-size: 14px;
@@ -148,8 +149,6 @@
         background: var(--accent);
         border: none;
         border-radius: 10px;
-        margin-top: 24px;
-        margin-bottom: 28px;
         position: relative;
         left: 50%;
         transform: translate(-50%, 0);
@@ -171,8 +170,8 @@
     line-height: 1.4;
     }
 
-    .modal-btm-2 {
 
+    .modal-btm-2 {
      font-size: 14px;
 
     }
@@ -204,5 +203,169 @@
     
 }
 
+/**для інпутів**/
+.modal-fr__position {
+    @media screen and (max-width: 767px) {
+        margin-top: 24px;
+   }
+    @media screen and (min-width: 768px) {
+         margin-top: 32px;
+    }
+}
 
+.modal-fr__form {
+    position: relative;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 16px;
+    }
+&:last-of-type {
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+}
+}
+
+.modal-fr__input-title{
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.40;
+    color: var(--primary-text-color);
+    @media screen and (max-width: 479px) {  
+        transform: translateY(-80%); 
+        top: 50%;
+        left: 15px;
+        right: auto;
+        font-size: 12px;
+    }
+    @media screen and (min-width: 480px)and (max-width: 767px) {
+        transform: translateY(-80%);
+        left: 15px;
+        top: 50%;
+        font-size: 12px;
+    }
+    @media screen and (min-width: 768px) {   
+        transform: translateY(-50%);
+        left: 80px;
+        top: 50%;
+        font-size: 14px;
+    }
+}
+
+.modal-fr__form-input {
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid var(--primary-bg-color);
+    border-radius: 10px;
+    outline: none;
+    transition: border 150ms $animation-cubic, visibility 150ms;
+    @media screen and (max-width: 479px) {   
+        width: 100%; 
+        padding: 8px 12px 8px 12px;
+        margin-bottom: 12px;
+    }
+    @media screen and (min-width: 480px)and (max-width: 767px) {
+        width: 224px; 
+        padding: 8px 12px 8px 12px;
+        margin-bottom: 12px;
+    }
+    @media screen and (min-width: 768px) {   
+        display: block;
+        width: 368px; 
+        padding: 11px 16px 11px 16px;
+        margin-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &:hover,
+    &:focus {
+        border: 2px solid #0a8817;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.29;
+    }
+    &:valid:focus {
+        border-color: #0a8817;
+    }
+    &:invalid:focus {
+        border-color: #c00000;
+    }
+
+    &:focus+.modal-fr__input-title,
+    &:not(:placeholder-shown)+.modal-fr__input-title {
+        transform: translateY(-40px);
+    } 
+}
+
+.modal-fr__input-title-comment {
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.40;
+    color: var(--primary-text-color);
+    @media screen and (max-width: 479px) {   
+        top: 40%;
+        left: auto;
+        right: auto;
+        font-size: 12px;
+    }
+    @media screen and (min-width: 480px)and (max-width: 767px) {
+        transform: translateY(-80%);
+        left: 15px;
+        top: 20%;
+        font-size: 12px;
+    }
+    @media screen and (min-width: 768px) {   
+        transform: translateY(-50%);
+        left: 80px;
+        top: 20%;
+        font-size: 14px;
+    }
+}
+
+.modal-fr__user-comment {
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid var(--primary-bg-color);
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+    transition: border 150ms $animation-cubic, visibility 150ms;
+    @media screen and (max-width: 479px) {   
+        width: 100%; 
+        padding: 8px 12px 39px 12px;
+        margin-bottom: 24px;
+    }
+    @media screen and (min-width: 480px)and (max-width: 767px) {
+        width: 224px; 
+        padding: 8px 12px 39px 12px;
+        margin-bottom: 24px;
+    }
+    @media screen and (min-width: 768px) {   
+        display: block;
+        width: 368px; 
+        padding: 11px 16px 53px 16px;
+        margin-bottom: 32px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &:hover,
+    &:focus {
+        border: 2px solid #0a8817;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.29;
+    }
+    &:valid:focus {
+        border-color: #0a8817;
+    }
+    &:invalid:focus {
+        border-color: #c00000;
+    }
+
+    &:focus + .modal-fr__input-title-comment,
+    &:not(:placeholder-shown) + .modal-fr__input-title-comment {
+        transform: translateY(-40px);
+    }
+}
 
