@@ -177,13 +177,11 @@
     @include tablet {
         display: none;
     }
-
 }
-
 
 .primary-btn.buy-btn-tab{
     display: none;
-    @include tablet {
+    @include desktop {
         display: inline-flex;
     }
 }
