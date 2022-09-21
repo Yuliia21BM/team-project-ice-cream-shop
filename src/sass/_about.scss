@@ -53,6 +53,7 @@
     margin-left: auto;
     margin-right: auto;
     filter: drop-shadow(-1px -20px 0px rgba(248, 210, 78, 0.7));
+    transition:filter $animation-time $animation-cubic;
     
         @include tablet {
             filter: drop-shadow(-2px -25px 0px rgba(248, 210, 78, 0.7));

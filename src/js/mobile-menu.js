@@ -3,7 +3,7 @@
   const menuBtnRef = document.querySelector("[data-menu-button]");
   const mobileMenuRef = document.querySelector("[data-menu]");
   const bodyDoc = document.querySelector("body");
-  const menuLink = document.querySelector("[menu-link]");
+  const menuLink = document.querySelector("[data-menu-link]");
   
 
   menuBtnRef.addEventListener("click", () => {
