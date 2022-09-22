@@ -193,12 +193,12 @@
         background-image: url(../images/hero/arrow-two.png);
         background-repeat: no-repeat;
         background-position: center;
-        transform: scale(1);
-        transition: transform 250ms ;
+        transform: scale(1) rotate(0);
+        transition: transform 250ms;
 
         &:focus,
         &:hover {
-            transform: scale(1.5);
+            transform: scale(1.5) rotate(-180deg);
         }
 
     }
