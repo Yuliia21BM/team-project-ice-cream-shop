@@ -86,6 +86,7 @@
           required
           id="user-name-two"
           placeholder=" "
+          pattern=".{6,}"
         />
         <label for="user-name-two" class="ingredients-input-title">Name</label>
       </div>
@@ -94,11 +95,12 @@
           type="tel"
           class="ingredients-input-form"
           name="user-tel-two"
-          title="+380 (96) 111-11-11"
           required
           id="user-phone-two"
           minlength="3"
           placeholder=" "
+          pattern=".{10,}"
+          title="+38 000 000 00 00"
         />
         <label for="user-phone-two" class="ingredients-input-title"
           >Phone</label
