@@ -181,7 +181,11 @@
 
 .primary-btn.buy-btn-tab{
     display: none;
-    @include desktop {
+    @include tablet {
         display: inline-flex;
     }
+}
+
+.header-memu-btn.is-open + .primary-btn.buy-btn-tab{
+    display: none;
 }
