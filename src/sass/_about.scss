@@ -1,9 +1,7 @@
 .about {
+    padding-top: 60px;
     background: var(--primary-bg-color);
-
 }
-
-.about-container {}
 
 .about-pre-title {
     font-family: 'Montserrat';
@@ -14,7 +12,6 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--light-color);
-    padding-top: 60px;
     margin-bottom: 12px;
     @include desktop {
         margin-bottom: 12px;

@@ -1,9 +1,12 @@
-.products{
+.products-section{
+    padding-top: 60px;
     padding-bottom: 60px;
 @include tablet {
     padding-bottom: 82px;
 }
-    
+@include desktop{
+    padding-bottom: 66px;
+}
 }
 
 .overlay {
@@ -17,7 +20,6 @@
 }
 
 .products-pretitle{
-    padding-top: 60px;
     margin-bottom: 12px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -45,9 +47,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    line-height: 38px;
-    /* identical to box height */
-    
+    line-height: 38px;    
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -87,12 +87,10 @@
     align-items: center;
     position: relative;
     @include tablet{
-    // width: 224px;
     width: calc((100% - 32px) / 3);
     height: 428px;
     box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
     border-radius: 15.7808px;
-       
     }
     @include desktop{
     width: calc((100% - 64px) / 3);
