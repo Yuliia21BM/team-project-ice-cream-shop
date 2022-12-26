@@ -1,0 +1,24 @@
+.btn-scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 20px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-hidden {
+  display: none;
+}
+
+.btn-scroll-to-top-svg {
+  fill: var(--accent);
+  transform: scale(1);
+  transition: all $animation-time $animation-cubic;
+
+  &:hover {
+    fill: var(--primary-color-btn);
+    transform: scale(1.1);
+  }
+}

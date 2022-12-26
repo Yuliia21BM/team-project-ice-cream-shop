@@ -11,3 +11,4 @@ import './js/ingrid-modal-2';
 import './js/location-modal';
 import './js/jquery-3.2.1.min.js';
 import './js/jquery.spincrement.min.js';
+import './js/btn-scroll-to-top';
