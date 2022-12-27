@@ -5,12 +5,12 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   speed: 2500,
   autoplay: {
-   delay: 7000,
- },
+    delay: 5000,
+  },
 
   // If we need pagination
   pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+    el: '.swiper-pagination',
+    clickable: true,
   },
 });
